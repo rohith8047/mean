@@ -3,6 +3,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 
 //files
+var config = require('./server/config/config');
 var UserRouter = require('./server/routes/user');
 
 var app = express();
@@ -14,4 +15,4 @@ app.use(express.static('client', {index: 'views/index.html'}));
 // app.use('/admin', AdminRouter);
 app.use('/user', UserRouter);
 
-app.listen(4003);
+app.listen(config.port);

@@ -4,5 +4,6 @@ module.exports = {
         user: '',
         password: ''
     },
-    passwordLength: 7
+    passwordLength: 7,
+    port: 4003
 };
