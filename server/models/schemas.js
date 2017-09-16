@@ -1,7 +1,8 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-mongoose.connect('mongodb://localhost:27017/mean');
+var config = require('./../config/config');
+mongoose.connect(config.mongo.url);
 
 var usersSchema = new Schema({
     name: String,

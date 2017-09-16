@@ -1,5 +1,5 @@
 var UsersColl = require('../models/schemas').UsersColl;
-
+var config = require('./../config/config');
 
 function login(email, password, callback) {
     var retObj = {};
@@ -7,7 +7,7 @@ function login(email, password, callback) {
         retObj.status = false;
         retObj.message = 'Invalid email';
         callback(retObj);
-    } else if (!password || password.length < 8) {
+    } else if (!password || password.length < config.passwordLength) {
         retObj.status = false;
         retObj.message = 'Invalid password';
         callback(retObj);

@@ -1,0 +1,22 @@
+{
+  "name": "mean",
+  "description": "this is description",
+  "main": "server.js",
+  "authors": [
+    "sunil <sunil@mtwlabs.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/rohith8047/mean-webstorm-",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^1.0.6",
+    "angular": "^1.6.6"
+  }
+}
